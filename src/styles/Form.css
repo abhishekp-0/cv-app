@@ -1,0 +1,62 @@
+*{
+    font-size: 24px;
+    text-align:left;
+}
+
+.section {
+    font-size: 24px;
+    margin: 20px 0px;
+    width: 350px;
+    min-height: 288px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+
+    /* Flexbox layout added */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section button {
+    align-self: flex-start; /* You can use center or flex-end if preferred */
+    margin-top: 10px;
+}
+
+.itemList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* spacing between items */
+    padding: 10px 0;
+    margin-top: -75px;
+}
+
+.item {
+    padding: 5px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    color: #333;
+}
+
+h2{
+    margin:0;
+    margin-bottom: 10px;
+}
+
+label{
+    display:block;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    height:40px;
+    font:inherit;
+    width:-webkit-fill-available;
+    
+}
+

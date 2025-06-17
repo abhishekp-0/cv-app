@@ -2,10 +2,11 @@
   
   margin: 0 auto;
   font-family: Arial, sans-serif;
+  font-size: 14px;
   color: #333;
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    height: 29.7cm;
-    width: 21cm;
+  height: 29.7cm;
+  width: 21cm;
 }
 
 
@@ -69,16 +70,16 @@
 .item-details {
   flex: 1;
   text-align: left;
-  font-size: medium;
+  font-size: 14px;
 }
 
 .item-details h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 24px;
   color: #000;
 }
 
 .item-details p {
   margin: 0px 0;
-  font-size: 14px;
+  font-size: 16px;
 }

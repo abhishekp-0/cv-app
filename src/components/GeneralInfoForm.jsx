@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 
-const GeneralInfoForm = ({ fullName: initialFullName="", email: initialEmail="", phone: initialPhone="", address: initialAddress="" }) => {
-  // const [fullName, setFullName] = useState(initialFullName);
-  // const [email, setEmail] = useState(initialEmail);
-  // const [phone, setPhone] = useState(initialPhone);
-  // const [address, setAddress] = useState(initialAddress);
-  const [GenInfo, setGenInfo] = useState({fullName: initialFullName, email: initialEmail, phone: initialPhone, address: initialAddress});
-
-  console.log(GenInfo.fullName, GenInfo.email, GenInfo.phone, GenInfo.address);
+const GeneralInfoForm = ({ generalInfo, onUpdate }) => {
 
   return (
     <form className="GeneralInfoForm section">
@@ -18,8 +11,8 @@ const GeneralInfoForm = ({ fullName: initialFullName="", email: initialEmail="",
         <input
           type="text"
           placeholder="Full Name"
-          value={GenInfo.fullName}
-          onChange={e => setGenInfo({...GenInfo, fullName: e.target.value})}
+          value={generalInfo.fullName}
+          onChange={e => onUpdate()}
         />
       </label>
 
@@ -28,8 +21,8 @@ const GeneralInfoForm = ({ fullName: initialFullName="", email: initialEmail="",
         <input
           type="email"
           placeholder="E-mail"
-          value={GenInfo.email}
-          onChange={e => setGenInfo({...GenInfo, email: e.target.value})}
+          value={generalInfo.email}
+          onChange={e => onUpdate()}
         />
       </label>
 

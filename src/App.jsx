@@ -1,13 +1,48 @@
-import  { React,useState } from 'react';
+import { React, useState } from 'react';
 import './App.css';
 import CVForm from './components/CVForm.jsx';
 import CVPreview from './components/CVPreview.jsx';
 
 export default function App() {
+  const [cvData, setCvData] = useState({
+    generalInfo: {
+      name: '',
+      email: '',
+      phone: '',
+      location: ''
+    },
+    education: [
+      {
+        title: '',
+        subtitle: '',
+        startDate: '',
+        endDate: '',
+        location: ''
+      }
+    ],
+    workExperience: [
+      {
+        title: '',
+        subtitle: '',
+        startDate: '',
+        endDate: '',
+        location: '',
+        description: ''
+      }
+    ]
+  });
+  const handleFormUpdate = (newData) => {
+    setCvData(newData);
+  };
 
   return (
     <div className="App">
-      <CVForm/>
+      <div className="CVForm">
+        <CVForm onUpdate={handleFormUpdate} cvData={cvData} />
+      </div>
+      <div className="CVPreview">
+        <CVPreview cvData={cvData} />
+      </div>
     </div>
   );
 }

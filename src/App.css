@@ -58,3 +58,22 @@
   padding-left: 20px;
 }
 
+.App {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Additional styling for the components */
+.CVForm {
+  flex: 1;
+  max-width: 35%;
+}
+
+.CVPreview {
+  flex: 1;
+  max-width: 65%;
+  border-left: 1px solid #ccc;
+  padding-left: 2rem;
+}

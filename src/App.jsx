@@ -32,6 +32,7 @@ export default function App() {
     ]
   });
   const handleFormUpdate = (newData) => {
+    console.log('Updating CV data:', newData);
     setCvData(newData);
   };
 

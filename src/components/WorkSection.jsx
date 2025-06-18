@@ -42,7 +42,8 @@ export default function WorkSection({workList, onUpdate}){
                     subtitle: '',
                     startDate: '',
                     endDate: '',
-                    location: ''
+                    location: '',
+                    description: ''
                 }} 
                 onSave={handleSave} 
                 onCancel={handleCancel} 
@@ -52,7 +53,7 @@ export default function WorkSection({workList, onUpdate}){
         :
         <div className="section">
             <h2>Work Experience</h2>
-            <WorkEduList ItemsList={workList} handleEdit={handleEdit} />
+            <WorkEduList ItemsList={workList} handleEdit={handleEdit}/>
             <button onClick={handleAdd}>ADD WORK EXPERIENCE</button>
         </div>
     );

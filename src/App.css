@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #f4f7fa;
 }
 
 .logo {
@@ -61,19 +61,45 @@
 .App {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 2.5rem;
+  padding: 2rem 0;
 }
 
 /* Additional styling for the components */
 .CVForm {
   flex: 1;
-  max-width: 35%;
+  max-width: 34%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .CVPreview {
   flex: 1;
-  max-width: 65%;
-  border-left: 1px solid #ccc;
-  padding-left: 2rem;
+  max-width: 66%;
+  min-width: 340px;
+  border-left: 1.5px solid #e3e8ee;
+  padding-left: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .App {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+  .CVForm, .CVPreview {
+    max-width: 100%;
+    min-width: unset;
+    padding: 0;
+    border: none;
+    align-items: stretch;
+  }
+  .CVPreview {
+    padding-top: 1.5rem;
+  }
 }

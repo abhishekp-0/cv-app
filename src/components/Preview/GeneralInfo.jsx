@@ -5,7 +5,7 @@ export default function GeneralInfo({generalInfo}){
     return(
         <header className="resume-header contact-info">
             <h1>{generalInfo.name}</h1>
-            <p>
+            <p className="contact-details">
               <span><FaEnvelope /> {generalInfo.email}</span>
               <span><FaPhoneAlt /> {generalInfo.phone}</span>
               <span><FaMapMarkerAlt /> {generalInfo.location}</span>

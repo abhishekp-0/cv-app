@@ -1,85 +1,124 @@
 .resume-container {
-  
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  margin: 40px auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  color: #222;
+  background: #f9fbfd;
+  box-shadow: 0 6px 36px rgba(0, 0, 0, 0.10), 0 2px 8px rgba(0,0,0,0.06);
+  border-radius: 16px;
   height: 29.7cm;
   width: 21cm;
+  max-width: 100%;
+  aspect-ratio: 210/297;
+  overflow: hidden;
+  padding-bottom: 40px;
+  border: 1px solid #e3e8ee;
 }
 
 
 .resume-header {
-  background-color: #0d3b66;
-  color: white;
+  background: linear-gradient(90deg, #0d3b66 60%, #278ea5 100%);
+  color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 44px 32px 24px 32px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 2px 16px -4px #0d3b6633;
 }
 
 .resume-header h1 {
-    font-size: 2em;
-    margin: 0;
+  font-size: 2.7em;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 1.5px;
 }
 
-.resume-header p {
-  margin-top: 8px;
-  font-size: 14px;
+.resume-header p,
+.contact-info span {
+  margin-top: 12px;
+  font-size: 1.08em;
+  color: #e0e6ed;
+  font-weight: 400;
 }
 
 .contact-info span {
-  margin: 0 10px;
+  margin: 0 18px;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-size: 14px;
+  gap: 8px;
 }
 
 .resume-section {
-  margin: 30px 7.5%;
+  margin: 40px 7% 0 7%;
+  padding-bottom: 18px;
+  border-bottom: 1.5px solid #e3e8ee;
 }
 
+.resume-section:last-child {
+  border-bottom: none;
+}
 
 .section-title {
-  background-color: #8c959f47;
-  padding: 8px;
-  font-size: 18px;
-  font-weight: bold;
+  background: #e3e8ee;
+  padding: 12px 22px;
+  font-size: 1.18em;
+  font-weight: 700;
   color: #0d3b66;
-  border-radius: 3px;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .1);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px -6px rgba(50, 50, 93, .08);
+  margin-bottom: 14px;
+  letter-spacing: 0.7px;
 }
-
-
 
 .section-item {
   display: flex;
-  margin-top: 15px;
+  margin-top: 22px;
+  gap: 28px;
 }
 
 .item-dates {
-  flex: 0 0 180px;
-  font-size: 14px;
-  color: #666;
+  flex: 0 0 140px;
+  font-size: 15px;
+  color: #6b7280;
+  text-align: right;
+  padding-top: 2px;
 }
 
-.item-dates p{
+.item-dates p {
   margin: 0;
 }
 
 .item-details {
   flex: 1;
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .item-details h3 {
-  margin: 0;
-  font-size: 24px;
-  color: #000;
+  margin: 0 0 3px 0;
+  font-size: 1.22em;
+  color: #0d3b66;
+  font-weight: 700;
 }
 
 .item-details p {
-  margin: 0px 0;
-  font-size: 16px;
+  margin: 3px 0 0 0;
+  font-size: 1em;
+  color: #222;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .resume-container {
+    width: 98vw;
+    min-width: unset;
+    height: auto;
+    aspect-ratio: unset;
+    border-radius: 10px;
+    padding: 0 2vw 32px 2vw;
+  }
+  .resume-section {
+    margin: 28px 0 0 0;
+    padding: 0 2vw 14px 2vw;
+  }
 }

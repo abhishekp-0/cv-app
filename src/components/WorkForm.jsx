@@ -1,13 +1,13 @@
 import "../styles/Resume.css";
 import React, { useState } from 'react';
 
-export default function EduForm({eduItem, onSave, onCancel, onDelete}) {
+export default function WorkForm({workItem, onSave, onCancel, onDelete}) {
     const [formData, setFormData] = useState({
-        title: eduItem.title || '',
-        subtitle: eduItem.subtitle || '',
-        startDate: eduItem.startDate || '',
-        endDate: eduItem.endDate || '',
-        location: eduItem.location || ''
+        title: workItem.title || '',
+        subtitle: workItem.subtitle || '',
+        startDate: workItem.startDate || '',
+        endDate: workItem.endDate || '',
+        location: workItem.location || ''
     });
 
     const handleChange = (e) => {
@@ -19,24 +19,24 @@ export default function EduForm({eduItem, onSave, onCancel, onDelete}) {
     };
 
     return (
-        <form className="WorkEduForm EduForm">
+        <form className="WorkForm WorkForm">
             <label>
-                School:
+                Company Name:
                 <input
                     type="text"
                     name="title"
-                    placeholder="Enter School/University"
+                    placeholder="Enter Company Name"
                     value={formData.title}
                     onChange={handleChange}
                 />
             </label>
 
             <label>
-                Degree:
+                Position Title:
                 <input
                     type="text"
                     name="subtitle"
-                    placeholder="Enter Degree/Field of Study"
+                    placeholder="Enter Position Title"
                     value={formData.subtitle}
                     onChange={handleChange}
                 />
@@ -71,6 +71,16 @@ export default function EduForm({eduItem, onSave, onCancel, onDelete}) {
                     name="location"
                     placeholder="Enter Location"
                     value={formData.location}
+                    onChange={handleChange}
+                />
+            </label>
+
+            <label>
+                Description:
+                <textarea
+                    name="description"
+                    placeholder="Enter Job Description"
+                    value={formData.description}
                     onChange={handleChange}
                 />
             </label>

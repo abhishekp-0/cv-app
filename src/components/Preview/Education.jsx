@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Resume.css";
+import "../../styles/Resume.css";
 import Item from "./Item.jsx";
 
 export default function Education({eduList}) {

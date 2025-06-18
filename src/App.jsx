@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import './App.css';
 import CVForm from './components/CVForm.jsx';
-import CVPreview from './components/CVPreview.jsx';
+import CVPreview from './components/Preview/CVPreview.jsx';
 
 export default function App() {
   const [cvData, setCvData] = useState({

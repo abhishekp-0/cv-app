@@ -80,6 +80,7 @@ export default function EduForm({eduItem, onSave, onCancel, onDelete}) {
                 <button type="button" onClick={() => onSave(formData)}>Save</button>
                 <button type="button" onClick={onCancel}>Cancel</button>
             </div>
+            
         </form>
     );
 }

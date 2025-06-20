@@ -1,4 +1,3 @@
-import {React, useState} from "react";
 import "../../styles/Resume.css";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 export default function GeneralInfo({generalInfo}){
